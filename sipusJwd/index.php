@@ -35,7 +35,7 @@ $tgl=date('Y-m-d');
 <div class="row">
 			<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-secondary sidebar collapse">
 				<div>
-					<div class="h5 p-1 mb-1 text-dark" style="background-color:green;">Hai Admin !</div>
+					<div class="h5 p-1 mb-1 text-dark" style="background-color:orange;">Hai Admin !</div>
 				</div>
 				<div class="position-sticky">
 					<a class="nav-link active text-light" aria-current="page" href="index.php?p=beranda">

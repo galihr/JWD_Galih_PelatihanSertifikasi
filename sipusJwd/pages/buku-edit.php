@@ -18,7 +18,14 @@
 		</tr>
 		<tr>
 			<td class="label-formulir">Kategori</td>
-			<td class="isian-formulir"><input type="text" name="kategori" id="kategori" value="<?php echo $r_tampil_buku['kategori']; ?>" class="isian-formulir isian-formulir-border"></td>
+			<td class="isian-formulir">
+				<select name="kategori" id="kategori" class="isian-formulir isian-formulir-border">
+					<option value="" select="selected">~ Pilih Kategori ~</option>
+					<option value="Ilmu Komputer"  <?php echo ($r_tampil_buku['kategori'] == 'Ilmu Komputer') ? 'selected' : ''; ?>>Ilmu Komputer</option>
+					<option value="Ilmu Agama" <?php echo ($r_tampil_buku['kategori'] == 'Ilmu Agama') ? 'selected' : ''; ?>>Ilmu Agama</option>
+					<option value="Karya Sastra" <?php echo ($r_tampil_buku['kategori'] == 'Karya Sastra') ? 'selected' : ''; ?>>Karya Sastra</option>
+				</select>
+			</td>
 		</tr>
 		<tr>
 			<td class="label-formulir">Pengarang</td>
@@ -54,7 +61,7 @@
       alert('Pengarang tidak boleh kosong');
 	  pengarang.focus();
       return false;
-	  
+
     } else if (penerbit.value == '') {
       alert('Penerbit tidak boleh kosong');
 	  penerbit.focus();

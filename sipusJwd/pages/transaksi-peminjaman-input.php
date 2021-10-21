@@ -3,10 +3,6 @@
 	<form action="proses/transaksi-peminjaman-input-proses.php" method="post">
 	<table id="tabel-input">
 		<tr>
-			<td class="label-formulir">ID Transaksi</td>
-			<td class="isian-formulir"><input type="text" name="id_transaksi" class="isian-formulir isian-formulir-border"></td>
-		</tr>
-		<tr>
 			<td class="label-formulir">Anggota</td>
 			<td class="isian-formulir">
 				<select name="id_anggota" class="isian-formulir isian-formulir-border">

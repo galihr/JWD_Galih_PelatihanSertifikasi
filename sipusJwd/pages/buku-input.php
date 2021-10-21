@@ -11,10 +11,10 @@ $count +=1;
 <div id="content">
 	<form action="proses/buku-input-proses.php" method="post" onsubmit="return checkform()">
 	<table id="tabel-input">
-		<tr>
+		<!-- <tr>
 			<td class="label-formulir">ID Buku</td>
 			<td class="isian-formulir"><input type="text" name="id_buku" id="id_buku" class="isian-formulir isian-formulir-border"></td>
-		</tr>
+		</tr> -->
 		<tr>
 			<td class="label-formulir">Judul Buku</td>
 			<td class="isian-formulir"><input type="text" name="judul" id="judul" class="isian-formulir isian-formulir-border"></td>

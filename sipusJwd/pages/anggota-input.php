@@ -1,19 +1,9 @@
-<?php
-include'koneksi.php';
-$sql = "SELECT COUNT(*) FROM tbanggota";
-$result = mysqli_query($db, $sql);
-$count = mysqli_fetch_assoc($result)['COUNT(*)'];
-$count +=1;
-?>
 
 <div id="label-page"><h3>Input Data Anggota</h3></div>
 <div id="content">
 	<form action="proses/anggota-input-proses.php" method="post" onsubmit="return checkform()">
 	<table id="tabel-input">
-		<tr>
-			<td class="label-formulir">ID Anggota</td>
-			<td class="isian-formulir"><input type="text" name="id_anggota" id="id_anggota" class="isian-formulir isian-formulir-border"></td>
-		</tr>
+
 		<tr>
 			<td class="label-formulir">Nama</td>
 			<td class="isian-formulir"><input type="text" name="nama" id="nama" class="isian-formulir isian-formulir-border"></td>

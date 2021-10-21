@@ -9,15 +9,11 @@
 	<table id="tabel-input">
 		<tr>
 			<td class="label-formulir">ID Anggota</td>
-			<td class="isian-formulir"><input type="text" name="id_anggota" value="<?php echo $r_tampil_anggota['idanggota']; ?>" readonly="readonly" class="isian-formulir isian-formulir-border warna-formulir-disabled"></td>
+			<td class="isian-formulir"><input type="text" name="id_anggota" value="<?php echo $r_tampil_anggota['idanggota']; ?>" readonly="readonly" class="isian-formulir isian-formulir-border warna-formulir-disabled" ></td>
 		</tr>
 		<tr>
 			<td class="label-formulir">Nama</td>
 			<td class="isian-formulir"><input type="text" name="nama" id="nama" value="<?php echo $r_tampil_anggota['nama']; ?>" class="isian-formulir isian-formulir-border"></td>
-		</tr>
-		<tr>
-			<td class="label-formulir">Nama 2</td>
-			<td class="isian-formulir"><input type="text" name="nama2" id="nama2" value="" class="isian-formulir isian-formulir-border"></td>
 		</tr>
 		<tr>
 		<td class="label-formulir">Jenis Kelamin</td>
@@ -42,17 +38,14 @@
 	<script>
 		function checkform() {
 			nama = document.getElementById('nama');
-			nama2 = document.getElementById('nama2');
 
 			if (nama.value == '') {
 				alert('Nama tidak boleh kosong');
-				nama.focus();
-				return false;
-			} else if(nama2.value == ''){
-				alert('Nama baru tidak boleh kosong');
 				nama2.focus();
 				return false;
-			}
+			} 
+
+
 		}
 	</script>
 
