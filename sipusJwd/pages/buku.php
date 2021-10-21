@@ -28,7 +28,8 @@
 			<td><?php echo $r_tampil_buku['penerbit']; ?></td>
 			<td>
 				<div class="tombol-opsi-container"><a href="index.php?p=buku-edit&id=<?php echo $r_tampil_buku['idbuku'];?>" class="tombol">Edit</a></div>
-				<div class="tombol-opsi-container"><a href="proses/buku-hapus.php?id=<?php echo $r_tampil_buku['idbuku']; ?>" class="tombol">Hapus</a></div>
+				<div class="tombol-opsi-container"><a href="proses/buku-hapus.php?id=<?php echo $r_tampil_buku['idbuku']; ?>"
+				onclick="return confirm('Yakin ingin menghapus data?');" class="tombol">Hapus</a></div>
 			</td>
 		</tr>
 		<?php } ?>

@@ -29,7 +29,9 @@
 			<td>
 
 				<div class="tombol-opsi-container"><a href="index.php?p=anggota-edit&id=<?php echo $r_tampil_anggota['idanggota'];?>" class="tombol">Edit</a></div>
-				<div class="tombol-opsi-container"><a href="proses/anggota-hapus.php?id=<?php echo $r_tampil_anggota['idanggota']; ?>" class="tombol">Hapus</a></div>
+
+				<div class="tombol-opsi-container"><a href="proses/anggota-hapus.php?id=<?php echo $r_tampil_anggota['idanggota']; ?>"
+				onclick="return confirm('Yakin ingin menghapus data?');" class="tombol">Hapus</a></div>
 			</td>
 		</tr>
 		<?php } ?>
